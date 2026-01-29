@@ -1,0 +1,224 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "MAX_USERS",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "enum Task_01.UserRole",
+						"name": "_role",
+						"type": "uint8"
+					}
+				],
+				"name": "addUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "count",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllUsers",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					}
+				],
+				"name": "getUser",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "userAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "enum Task_01.UserRole",
+								"name": "role",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint8",
+								"name": "balance",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Task_01.User",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					}
+				],
+				"name": "getUserInfo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "userAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "enum Task_01.UserRole",
+								"name": "role",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint8",
+								"name": "balance",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Task_01.User",
+						"name": "userInfo",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "increment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "addresses",
+						"type": "address[]"
+					}
+				],
+				"name": "returnSortedAddresses",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_newBalance",
+						"type": "uint8"
+					}
+				],
+				"name": "updateBalance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tasks/Task_01.sol": "Task_01"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"tasks/Task_01.sol": {
+			"keccak256": "0x79efb73696cf21d6e33dfaed0ddc359a7fbee53b5d77e1bd37fd1fbc2f2cbdb2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7f894e1a26f42a1df1b60ef20e34e88aadaafadeeae6b504c80e2675a2fc0cdf",
+				"dweb:/ipfs/QmYDP7DrfLn8jtL2ynWV1NX5vwBUL22WgQ6grqFUQNfAFk"
+			]
+		}
+	},
+	"version": 1
+}
